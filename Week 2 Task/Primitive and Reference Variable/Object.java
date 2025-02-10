@@ -70,9 +70,9 @@ class secondUser {
 
 class Object {
     public static void main(String[] args) {
-        User user1 = new User("Alice", 25);
+        User user1 = new User("Joe", 25);
         User user2 = new User("Jill", 10);
-        secondUser secondUser1 = new secondUser("Alice", 25);
+        secondUser secondUser1 = new secondUser("Joe", 25);
         secondUser secondUser2 = new secondUser("Jill", 10);
 
         System.out.println("User class with overridden methods:");
