@@ -1,4 +1,4 @@
-class String {
+class StringProcessor {
     // Method to reverse a string
     public static String reverseString(String str) {
         return new StringBuilder(str).reverse().toString();
