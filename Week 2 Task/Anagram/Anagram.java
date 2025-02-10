@@ -30,6 +30,6 @@ class Anagram {
     public static void main(String[] args) {
         String s = "acbcabccd";
         String p = "abc";
-        System.out.println(findAnagrams(s, p)); // Output: [0, 6]
+        System.out.println(findAnagrams(s, p)); 
     }
 }
