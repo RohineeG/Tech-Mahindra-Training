@@ -1,5 +1,3 @@
-package Car.src;
-
 public class Main {
     public static void main(String[] args) {
         // Creating an array of Car objects (both Car and ElectricCar)
