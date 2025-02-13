@@ -18,7 +18,7 @@ class Employee implements Serializable{
     }
 }
 
-class Serialization{
+class Serialization_samp{
     public static void main(String args[]){
         Employee e = new Employee(1,"Rohinee","rohinee@abc.com");
         try (FileOutputStream fileOut = new FileOutputStream("file.txt");
