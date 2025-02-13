@@ -41,7 +41,7 @@ class ThreadRunnableTwo implements Runnable{
 }
 
 
-class Test{
+class Thread_samp{
     public static void main(String[] args) {
         RThreadOne thread1 = new RThreadOne();
         thread1.start();
