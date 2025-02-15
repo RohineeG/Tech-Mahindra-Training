@@ -1,4 +1,4 @@
-var a = 2;
+var a = 35;
 if(a>=0)
 {
     console.log("It is positive")
