@@ -1,4 +1,4 @@
-const a = 10;
+const a = 78;
 function isPrimeNumber(n) {
     if (n < 2) 
     return false;
