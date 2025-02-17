@@ -8,4 +8,4 @@ function multiplicationTable() {
         i++;
     }
 }
-MultiplicationTable();
+multiplicationTable();
