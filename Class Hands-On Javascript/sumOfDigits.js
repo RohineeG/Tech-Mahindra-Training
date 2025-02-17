@@ -13,5 +13,4 @@ function sumOfDigits(num){
         console.log("Sum is odd");
     }
 }
-let number = prompt("Enter the number: ");
-sumOfDigits(number);
+sumOfDigits(45);
