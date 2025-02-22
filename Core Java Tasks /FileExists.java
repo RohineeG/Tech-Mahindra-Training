@@ -9,12 +9,12 @@ public class FileExists {
         File file = new File(path);
         if (file.exists()) {
             if (file.isFile()) {
-                System.out.println("The specified path exists and it is a FILE.");
+                System.out.println("The specified path exists and it is a file.");
             } else if (file.isDirectory()) {
-                System.out.println("The specified path exists and it is a DIRECTORY.");
+                System.out.println("The specified path exists and it is a directory.");
             }
         } else {
-            System.out.println("The specified path does NOT exist.");
+            System.out.println("The specified path does not exist.");
         }
 
         sc.close();
