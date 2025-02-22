@@ -5,12 +5,12 @@ public class Directory {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the directory path: ");
-        String directoryPath = sc.nextLine();
-        File directory = new File(directoryPath);
+        String path = sc.nextLine();
+        File directory = new File(path);
         if (directory.exists() && directory.isDirectory()) {
             String[] fileList = directory.list();
             if (fileList != null && fileList.length > 0) {
-                System.out.println("\nFiles and Directories in " + directoryPath + ":");
+                System.out.println("\nFiles and Directories in " + path + ":");
                 for (String file : fileList) {
                     System.out.println(file);
                 }
