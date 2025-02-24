@@ -24,7 +24,7 @@ class MatrixMultiplierThread extends Thread {
 
 public class MatrixMultiplication {
     public static void main(String[] args) {
-        int size = 3; // Change this for different matrix sizes
+        int size = 3; 
         int[][] A = generateMatrix(size);
         int[][] B = generateMatrix(size);
         int[][] result = new int[size][size];
@@ -34,7 +34,6 @@ public class MatrixMultiplication {
         System.out.println("Matrix B:");
         printMatrix(B);
 
-        // Creating and starting threads
         Thread[][] threads = new Thread[size][size];
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
@@ -43,7 +42,7 @@ public class MatrixMultiplication {
             }
         }
 
-        // Waiting for all threads to finish
+     
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 try {
@@ -58,7 +57,7 @@ public class MatrixMultiplication {
         printMatrix(result);
     }
 
-    // Generates a square matrix with random numbers (1-10)
+  
     private static int[][] generateMatrix(int size) {
         Random rand = new Random();
         int[][] matrix = new int[size][size];
@@ -70,7 +69,7 @@ public class MatrixMultiplication {
         return matrix;
     }
 
-    // Prints the matrix
+   
     private static void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {
             for (int num : row) {
