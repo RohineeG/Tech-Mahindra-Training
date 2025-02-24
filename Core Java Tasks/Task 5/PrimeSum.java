@@ -33,13 +33,13 @@ class PrimeSumThread extends Thread {
 
 public class PrimeSum {
     public static void main(String[] args) {
-        int limit = 10; // Adjust the limit as needed
-        int numThreads = 4;  // Number of threads
+        int limit = 10;
+        int numThreads = 4;  
         List<PrimeSumThread> threads = new ArrayList<>();
         int range = limit / numThreads;
         long totalSum = 0;
 
-        // Creating and starting threads
+       
         for (int i = 0; i < numThreads; i++) {
             int start = i * range + 1;
             int end = (i == numThreads - 1) ? limit : (i + 1) * range;
@@ -48,7 +48,7 @@ public class PrimeSum {
             thread.start();
         }
 
-        // Waiting for all threads to finish
+        
         for (PrimeSumThread thread : threads) {
             try {
                 thread.join();
