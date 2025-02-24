@@ -10,7 +10,6 @@ public class JDBCOperations {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 
-    // Task 1: Recursively Insert Multiple Rows
     public static void insertRowsRecursively(Connection conn, Scanner scanner) throws SQLException {
         System.out.print("Enter student name (or type 'exit' to stop): ");
         String name = scanner.nextLine();
@@ -18,7 +17,7 @@ public class JDBCOperations {
 
         System.out.print("Enter age: ");
         int age = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         String sql = "INSERT INTO students (name, age) VALUES (?, ?)";
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -31,18 +30,17 @@ public class JDBCOperations {
         insertRowsRecursively(conn, scanner);
     }
 
-    // Task 2: Update a Row Dynamically
     public static void updateRow(Connection conn, Scanner scanner) throws SQLException {
         System.out.print("Enter student ID to update: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         System.out.print("Enter new name: ");
         String name = scanner.nextLine();
 
         System.out.print("Enter new age: ");
         int age = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         String sql = "UPDATE students SET name = ?, age = ? WHERE id = ?";
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -54,11 +52,11 @@ public class JDBCOperations {
         }
     }
 
-    // Task 3: Delete a Row Using Scanner
+  
     public static void deleteRow(Connection conn, Scanner scanner) throws SQLException {
         System.out.print("Enter student ID to delete: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         String sql = "DELETE FROM students WHERE id = ?";
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -68,11 +66,11 @@ public class JDBCOperations {
         }
     }
 
-    // Task 4: Select a Row
+    
     public static void selectRow(Connection conn, Scanner scanner) throws SQLException {
         System.out.print("Enter student ID to view: ");
         int id = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         String sql = "SELECT * FROM students WHERE id = ?";
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -89,7 +87,6 @@ public class JDBCOperations {
         }
     }
 
-    // Menu-Driven Program
     public static void main(String[] args) {
         try (Connection conn = connect(); Scanner scanner = new Scanner(System.in)) {
             while (true) {
@@ -102,7 +99,7 @@ public class JDBCOperations {
                 System.out.print("Enter your choice: ");
 
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // Consume newline
+                scanner.nextLine(); 
 
                 switch (choice) {
                     case 1 -> insertRowsRecursively(conn, scanner);
