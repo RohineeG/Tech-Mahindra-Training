@@ -18,7 +18,7 @@ class MergeSortThread extends Thread {
         if (left < right) {
             int mid = left + (right - left) / 2;
 
-            // Create two threads for sorting left and right halves
+            
             MergeSortThread leftSorter = new MergeSortThread(arr, left, mid);
             MergeSortThread rightSorter = new MergeSortThread(arr, mid + 1, right);
 
@@ -32,7 +32,7 @@ class MergeSortThread extends Thread {
                 e.printStackTrace();
             }
 
-            // Merge the sorted halves
+           
             merge(arr, left, mid, right);
         }
     }
