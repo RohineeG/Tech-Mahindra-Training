@@ -1,9 +1,9 @@
 import java.util.LinkedList;
 
-public class Insertion {
+public class InsertAtFront {
     public static void main(String[] args) {
         LinkedList<String> list = new LinkedList<>(java.util.List.of("Apple", "Banana"));
-        list.add(1, "Grapes");
-        System.out.println("After inserting: " + list);
+        list.offerFirst("Kiwi");
+        System.out.println("After inserting at front: " + list);
     }
 }
