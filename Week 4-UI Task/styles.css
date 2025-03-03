@@ -6,11 +6,11 @@ body {
   color: #333;
 }
 
-
 @media screen and (max-width: 1024px) {
   .navbar {
     padding: 15px 30px;
   }
+
   .btn-primary {
     font-size: 16px;
     padding: 12px 25px;
@@ -31,6 +31,7 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+
   .btn-primary {
     font-size: 14px;
     padding: 10px 20px;
@@ -48,6 +49,7 @@ body {
   .navbar {
     padding: 10px 20px;
   }
+
   .btn-primary {
     font-size: 12px;
     padding: 8px 15px;
@@ -65,7 +67,6 @@ body {
     font-size: 14px;
   }
 }
-
 
 .navbar {
   display: flex;
@@ -94,7 +95,6 @@ body {
   font-weight: bold;
 }
 
-
 .btn-primary {
   background: #ff7eb3;
   color: white;
@@ -109,7 +109,6 @@ body {
 .btn-primary:hover {
   background: #ff4d94;
 }
-
 
 .course-container {
   display: flex;
@@ -131,7 +130,6 @@ body {
 .course-card:hover {
   transform: scale(1.05);
 }
-
 
 .instructor-container {
   display: flex;
@@ -161,13 +159,54 @@ body {
   border-radius: 10px;
 }
 
-
 footer {
   background: #333;
   color: white;
   text-align: center;
   padding: 15px 0;
   margin-top: 20px;
+}
+.enrollment-form {
+  background: white;
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.enrollment-form input,
+.enrollment-form select,
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-submit {
+  background: #ff7eb3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #ff4d94;
+}
+
+#search-bar {
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .carousel {
@@ -221,41 +260,6 @@ footer {
   right: 10px;
 }
 
-.enrollment-form {
-  background: white;
-  padding: 30px;
-  max-width: 500px;
-  margin: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#courses-index .enroll-btn {
+  display: none;
 }
-
-.enrollment-form input,
-.enrollment-form select,
-.btn-submit {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.btn-submit {
-  background: #ff7eb3;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-submit:hover {
-  background: #ff4d94;
-}
-
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
