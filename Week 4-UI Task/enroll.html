@@ -43,18 +43,18 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // Extract course name from URL and display it
+        
         const urlParams = new URLSearchParams(window.location.search);
         const courseName = urlParams.get("course-select");
         if (courseName) {
           document.getElementById("course-select").value = courseName;
         }
 
-        // Form Validation & Alert
+       
         document
           .getElementById("enrollment-form")
           .addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
 
             const name = document.getElementById("name").value.trim();
             const email = document.getElementById("email").value.trim();
