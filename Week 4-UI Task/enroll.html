@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enroll Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <header>
+        <div class="navbar">
+          <h1 class="logo">EduFlex</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <h2 style="text-align: center">&nbsp;&nbsp;Enroll Now</h2>
+      <p style="text-align: center">
+        Join and enjoy unlimited access to our courses
+      </p>
+    </header>
+
+    <form id="enrollment-form" class="enrollment-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your Email" required />
+      <select id="course-select">
+        <option value="1">Web Development</option>
+        <option value="2">Data Science</option>
+        <option value="3">Machine Learning</option>
+        <option value="4">Cyber Security</option>
+        <option value="5">Cloud Computing</option>
+      </select>
+      <button type="submit" class="btn-submit">Enroll</button>
+    </form>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Extract course name from URL and display it
+        const urlParams = new URLSearchParams(window.location.search);
+        const courseName = urlParams.get("course-select");
+        if (courseName) {
+          document.getElementById("course-select").value = courseName;
+        }
+
+        // Form Validation & Alert
+        document
+          .getElementById("enrollment-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+
+            if (!name || !email) {
+              alert("Please fill out all fields.");
+              return;
+            }
+
+            alert(`Enrollment Successful!\nName: ${name}\nEmail: ${email}`);
+          });
+      });
+    </script>
+    <footer style="position: absolute; bottom: 0; width: 100%">
+      <p>&copy; 2025 EduFlex. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

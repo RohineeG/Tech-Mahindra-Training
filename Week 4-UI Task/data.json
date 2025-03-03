@@ -1,0 +1,81 @@
+{
+  "courses": [
+    {
+      "name": "Web Development",
+      "instructor": "Charles Dickens",
+      "description": "Create webpages.",
+      "prerequisites": "Basic computer skills",
+      "reviews": ["Great course!", "Very informative!", "Loved it!"],
+      "image": "course 2.jpeg"
+    },
+    {
+      "name": "Digital Marketing",
+      "instructor": "Jane Austen",
+      "description": "Learn digital marketing.",
+      "prerequisites": "Basic statistics and Python knowledge",
+      "reviews": ["Awesome content!", "Well-structured course!"],
+      "image": "course 1.jpg"
+    },
+    {
+      "name": "Java Programming",
+      "instructor": "Charlotte Bronte",
+      "description": "Understand ML.",
+      "prerequisites": "Python, Linear Algebra",
+      "reviews": ["Great examples!", "Superb explanations!"],
+      "image": "course 5.jpeg"
+    },
+    {
+      "name": "Cyber Security",
+      "instructor": "Mercedes Ron",
+      "description": "Learn about hacking",
+      "prerequisites": "Networking Basics",
+      "reviews": ["Very practical!", "Loved the hands-on exercises!"],
+      "image": "course 3.jpg"
+    },
+    {
+      "name": "Cloud Computing",
+      "instructor": "Emily Bronte",
+      "description": "Master cloud.",
+      "prerequisites": "Basic IT knowledge",
+      "reviews": ["Great coverage of cloud services!", "Very insightful!"],
+      "image": "course 4.png"
+    }
+  ],
+  "instructors": [
+    {
+      "name": "Charles Dickens",
+      "bio": "Experienced web developer.",
+      "courses": ["Web Development"],
+      "rating": 4.8,
+      "image": "person 1.jpg"
+    },
+    {
+      "name": "Jane Austen",
+      "bio": "Digital Marketing Specialist.",
+      "courses": ["Data Science"],
+      "rating": 4.7,
+      "image": "person 2.jpeg"
+    },
+    {
+      "name": "Charlotte Bronte",
+      "bio": "JAVA Developer.",
+      "courses": ["Machine Learning"],
+      "rating": 4.9,
+      "image": "person 4.jpeg"
+    },
+    {
+      "name": "Mercedes Ron",
+      "bio": "Cybersecurity specialist.",
+      "courses": ["Cyber Security"],
+      "rating": 4.6,
+      "image": "person 3.jpeg"
+    },
+    {
+      "name": "Emily Bronte",
+      "bio": "Cloud computing expert.",
+      "courses": ["Cloud Computing"],
+      "rating": 4.7,
+      "image": "person 5.jpeg"
+    }
+  ]
+}
