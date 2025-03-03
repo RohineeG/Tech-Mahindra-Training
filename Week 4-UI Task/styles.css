@@ -11,12 +11,6 @@ body {
   .navbar {
     padding: 15px 30px;
   }
-  .hero-content h2 {
-    font-size: 32px;
-  }
-  .hero-content p {
-    font-size: 16px;
-  }
   .btn-primary {
     font-size: 16px;
     padding: 12px 25px;
@@ -37,16 +31,6 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-  .hero {
-    height: auto;
-    padding: 30px;
-  }
-  .hero-content h2 {
-    font-size: 28px;
-  }
-  .hero-content p {
-    font-size: 14px;
-  }
   .btn-primary {
     font-size: 14px;
     padding: 10px 20px;
@@ -63,12 +47,6 @@ body {
 @media screen and (max-width: 480px) {
   .navbar {
     padding: 10px 20px;
-  }
-  .hero-content h2 {
-    font-size: 24px;
-  }
-  .hero-content p {
-    font-size: 12px;
   }
   .btn-primary {
     font-size: 12px;
@@ -116,26 +94,6 @@ body {
   font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 50px;
-}
-
-.hero-content h2 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
 
 .btn-primary {
   background: #ff7eb3;
@@ -174,7 +132,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Instructor Section */
+
 .instructor-container {
   display: flex;
   flex-wrap: nowrap;
