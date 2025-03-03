@@ -252,3 +252,10 @@ footer {
 .btn-submit:hover {
   background: #ff4d94;
 }
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
