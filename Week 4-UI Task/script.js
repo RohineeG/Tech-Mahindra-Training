@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "courses.html";
       });
 
-      // Populate courses
+     
       courses.forEach((course) => {
         const div = document.createElement("div");
         div.className = "course-card";
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         courseList?.appendChild(div);
       });
 
-      // Populate instructors
+     
       instructors.forEach((instructor) => {
         const div = document.createElement("div");
         div.className = "instructor-card";
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         instructorList?.appendChild(div);
       });
 
-      // Populate carousel
+      
       courses.forEach((course) => {
         const slide = document.createElement("div");
         slide.className = "carousel-slide";
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         carouselContainer.appendChild(slide);
       });
 
-      // Carousel functionality
+     
       let index = 0;
       const slides = document.querySelectorAll(".carousel-slide");
       const showSlide = (i) => {
