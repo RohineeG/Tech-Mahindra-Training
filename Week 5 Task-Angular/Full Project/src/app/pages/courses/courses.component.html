@@ -1,0 +1,15 @@
+<h3 style="text-align: center">Explore Our Courses</h3>
+<div class="filter-container">
+  <label for="filtercourse">&nbsp;&nbsp;Filter Courses:</label>
+  <select [(ngModel)]="selected">
+    <option value="All">All</option>
+    <option *ngFor="let domain of domains" [value]="domain">
+      {{ domain }}
+    </option>
+  </select>
+</div>
+<app-courses-card
+  *ngFor="let course of courseTotallist | filtercourse : selected"
+  [course]="course"
+  (click)="onCourseClick(course.id)"
+></app-courses-card>
