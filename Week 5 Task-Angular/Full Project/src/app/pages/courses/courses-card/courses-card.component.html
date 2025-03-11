@@ -1,0 +1,24 @@
+<div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          src="http://localhost:8090/{{ course.image }}"
+          class="img-fluid rounded-start"
+          alt="{{ course.name }}"
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ course.name }}</h5>
+          <p class="card-text">Instructor: {{ course.instructor }}</p>
+          <p class="card-text">Domain: {{ course.domain }}</p>
+          <p class="card-text">Rating: {{ course.rating }}</p>
+          <p class="card-second-title">${{ course.price }}</p>
+          <button class="btn btn-outline-danger" (click)="toggleWishlist(course)">
+            {{ isInWishlist(+course.id) ? 'Remove from Wishlist' : 'Add to Wishlist' }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
