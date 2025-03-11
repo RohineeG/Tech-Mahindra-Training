@@ -1,0 +1,36 @@
+<section class="hero">
+  <h1>Learn From the Best Courses</h1>
+  <p>Upgrade your skills with expert-led courses!</p>
+</section>
+
+<!-- Course Categories -->
+<section class="categories">
+  <h2>Explore Categories</h2>
+  <div class="category-list">
+    <div class="category">Web Development</div>
+    <div class="category">AI & Machine Learning</div>
+    <div class="category">Business & Finance</div>
+  </div>
+</section>
+
+<!-- Featured Courses -->
+<section class="featured">
+  <h2>Featured Courses</h2>
+  <app-course-card
+    *ngFor="let course of courselist | slice : 0 : 10"
+    [course]="course"
+    (click)="onCourseClick(course.id)"
+  ></app-course-card>
+  <button routerLink="/courses">More Courses</button>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <h2>What Our Students Say</h2>
+  <p>⭐⭐⭐⭐⭐ "Amazing platform to learn new skills!"</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 EduPlatform. All Rights Reserved.</p>
+</footer>
