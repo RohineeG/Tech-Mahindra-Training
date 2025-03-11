@@ -1,0 +1,388 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Digital Marketing",
+      "instructor": "Sarah",
+      "domain": "Marketing",
+      "rating": 5,
+      "price": 20,
+      "image": "course 1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Web Development",
+      "instructor": "Emma",
+      "domain": "CSE",
+      "rating": 4,
+      "price": 15,
+      "image": "course 2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Cyber Security",
+      "instructor": "David",
+      "domain": "CSE",
+      "rating": 4.5,
+      "price": 20,
+      "image": "course 3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mobile App Development",
+      "instructor": "Jonathan",
+      "domain": "CSE",
+      "rating": 4.6,
+      "price": 20,
+      "image": "course 4.png"
+    },
+    {
+      "id": 5,
+      "name": "Java Development",
+      "instructor": "Joshua",
+      "domain": "CSE",
+      "rating": 5,
+      "price": 20,
+      "image": "course 5.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Machine Learning",
+      "instructor": "Michelle",
+      "domain": "CSE",
+      "rating": 5,
+      "price": 20,
+      "image": "course 6.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "UI-UX",
+      "instructor": "Gabriel",
+      "domain": "CSE",
+      "rating": 5,
+      "price": 20,
+      "image": "course 7.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Psychology",
+      "instructor": "Michael",
+      "domain": "Science",
+      "rating": 5,
+      "price": 20,
+      "image": "course 8.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Neuroscience",
+      "domain": "Science",
+      "instructor": "Ruth",
+      "rating": 5,
+      "price": 20,
+      "image": "course 9.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Genetic Engineering",
+      "instructor": "Mary",
+      "domain": "Science",
+      "rating": 5,
+      "price": 20,
+      "image": "course 10.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "Data Science",
+      "instructor": "Alice",
+      "domain": "CSE",
+      "rating": 4.8,
+      "price": 25,
+      "image": "course 11.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Artificial Intelligence",
+      "instructor": "Bob",
+      "domain": "CSE",
+      "rating": 4.9,
+      "price": 30,
+      "image": "course 12.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "Blockchain Technology",
+      "instructor": "Charlie",
+      "domain": "CSE",
+      "rating": 4.7,
+      "price": 22,
+      "image": "course 13.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "Cloud Computing",
+      "instructor": "Diana",
+      "domain": "CSE",
+      "rating": 4.6,
+      "price": 28,
+      "image": "course 14.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "Criminal Forensics",
+      "instructor": "Edward",
+      "domain": "Science",
+      "rating": 4.5,
+      "price": 27,
+      "image": "course 15.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "Evolutionary Biology",
+      "instructor": "Fiona",
+      "domain": "CSE",
+      "rating": 4.9,
+      "price": 35,
+      "image": "course 16.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "Algebra",
+      "instructor": "George",
+      "domain": "Mathematics",
+      "rating": 4.8,
+      "price": 32,
+      "image": "course 17.jpeg"
+    },
+    {
+      "id": 18,
+      "name": "Internet of Things",
+      "instructor": "Hannah",
+      "domain": "CSE",
+      "rating": 4.7,
+      "price": 26,
+      "image": "course 18.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "Augmented Reality",
+      "instructor": "Ian",
+      "domain": "CSE",
+      "rating": 4.6,
+      "price": 29,
+      "image": "course 19.jpeg"
+    },
+    {
+      "id": 20,
+      "name": "Calculus",
+      "instructor": "Jane",
+      "domain": "Mathematics",
+      "rating": 4.8,
+      "price": 31,
+      "image": "course 20.png"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "address": "Chennai, India",
+      "image": "chennai_city.jpeg"
+    },
+    {
+      "id": 2,
+      "address": "Shanghai, China",
+      "image": "shanghai.jpeg"
+    },
+    {
+      "id": 3,
+      "address": "New York, US",
+      "image": "new_york.jpeg"
+    },
+    {
+      "id": 4,
+      "address": "Florida, US",
+      "image": "florida.jpeg"
+    }
+  ],
+  "details": [
+    {
+      "id": 1,
+      "name": "Digital Marketing",
+      "instructor": "Sarah",
+      "domain": "Marketing",
+      "rating": 5,
+      "price": 20,
+      "image": "course 1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Web Development",
+      "instructor": "Emma",
+      "domain": "CSE",
+      "rating": 4,
+      "price": 15,
+      "image": "course 2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Cyber Security",
+      "instructor": "David",
+      "domain": "CSE",
+      "rating": 4.5,
+      "price": 20,
+      "image": "course 3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mobile App Development",
+      "instructor": "Jonathan",
+      "domain": "CSE",
+      "rating": 4.6,
+      "price": 20,
+      "image": "course 4.png"
+    },
+    {
+      "id": 5,
+      "name": "Java Development",
+      "instructor": "Joshua",
+      "domain": "CSE",
+      "rating": 5,
+      "price": 20,
+      "image": "course 5.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Machine Learning",
+      "instructor": "Michelle",
+      "domain": "CSE",
+      "rating": 5,
+      "price": 20,
+      "image": "course 6.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "UI-UX",
+      "instructor": "Gabriel",
+      "domain": "CSE",
+      "rating": 5,
+      "price": 20,
+      "image": "course 7.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Psychology",
+      "instructor": "Michael",
+      "domain": "Science",
+      "rating": 5,
+      "price": 20,
+      "image": "course 8.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Neuroscience",
+      "domain": "Science",
+      "instructor": "Ruth",
+      "rating": 5,
+      "price": 20,
+      "image": "course 9.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Genetic Engineering",
+      "instructor": "Mary",
+      "domain": "Science",
+      "rating": 5,
+      "price": 20,
+      "image": "course 10.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "Data Science",
+      "instructor": "Alice",
+      "domain": "CSE",
+      "rating": 4.8,
+      "price": 25,
+      "image": "course 11.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Artificial Intelligence",
+      "instructor": "Bob",
+      "domain": "CSE",
+      "rating": 4.9,
+      "price": 30,
+      "image": "course 12.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "Blockchain Technology",
+      "instructor": "Charlie",
+      "domain": "CSE",
+      "rating": 4.7,
+      "price": 22,
+      "image": "course 13.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "Cloud Computing",
+      "instructor": "Diana",
+      "domain": "CSE",
+      "rating": 4.6,
+      "price": 28,
+      "image": "course 14.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "Criminal Forensics",
+      "instructor": "Edward",
+      "domain": "Science",
+      "rating": 4.5,
+      "price": 27,
+      "image": "course 15.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "Evolutionary Biology",
+      "instructor": "Fiona",
+      "domain": "CSE",
+      "rating": 4.9,
+      "price": 35,
+      "image": "course 16.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "Algebra",
+      "instructor": "George",
+      "domain": "Mathematics",
+      "rating": 4.8,
+      "price": 32,
+      "image": "course 17.jpeg"
+    },
+    {
+      "id": 18,
+      "name": "Internet of Things",
+      "instructor": "Hannah",
+      "domain": "CSE",
+      "rating": 4.7,
+      "price": 26,
+      "image": "course 18.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "Augmented Reality",
+      "instructor": "Ian",
+      "domain": "CSE",
+      "rating": 4.6,
+      "price": 29,
+      "image": "course 19.jpeg"
+    },
+    {
+      "id": 20,
+      "name": "Calculus",
+      "instructor": "Jane",
+      "domain": "Mathematics",
+      "rating": 4.8,
+      "price": 31,
+      "image": "course 20.png"
+    }
+  ]
+}
