@@ -1,0 +1,49 @@
+<div class="container">
+  <h3>Enquiry Form</h3>
+  <form (submit)="submitForm()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input
+        type="text"
+        id="name"
+        class="form-control"
+        [(ngModel)]="name"
+        name="name"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        [(ngModel)]="email"
+        name="email"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="course" class="form-label">Course</label>
+      <select
+        id="course"
+        class="form-select"
+        [(ngModel)]="course"
+        name="course"
+        required
+      >
+        <option value="" disabled selected>Select a Course</option>
+        <option *ngFor="let course of courses" [value]="course">{{ course }}</option>
+      </select>
+    </div>
+
+    <div class="alert alert-danger" *ngIf="this.errors.length >= 1">
+      <ul>
+        <li *ngFor="let error of errors">{{ error }}</li>
+      </ul>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
