@@ -1,0 +1,12 @@
+<sly data-sly-use.multiNews="com.example.core.models.MultiNewsModel">
+    <div class="multi-news">
+        <sly data-sly-list.newsItem="${multiNews.newsItems}">
+            <div class="news-item">
+                <h2>${newsItem.title}</h2>
+                <p>${newsItem.detail}</p>
+                <span>${newsItem.publishedDate}</span>
+                <p>Source: ${newsItem.source}</p>
+            </div>
+        </sly>
+    </div>
+</sly>

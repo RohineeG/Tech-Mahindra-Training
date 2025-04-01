@@ -1,0 +1,15 @@
+<sly data-sly-use.news="com.example.core.models.NewsModel"/>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+
+<!-- Include ClientLib for styling -->
+<sly data-sly-call="${clientLib.css @ categories='news'}"/>
+
+<div class="cop-news-component">
+  <h2>${news.title}</h2>
+  <p>${news.detail}</p>
+  <span class="news-date">${news.publishedDate}</span>
+  <p class="news-source">Source: ${news.source}</p>
+</div>
+
+<!-- Include ClientLib for JavaScript (if any) -->
+<sly data-sly-call="${clientLib.js @ categories='news'}"/>
