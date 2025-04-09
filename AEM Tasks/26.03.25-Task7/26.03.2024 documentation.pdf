@@ -1,0 +1,150 @@
+uilding the News Room Page Component Using the Base Page
+1.1 Directory Setup
+Navigate to the following path:
+ui.apps/src/main/content/jcr_root/apps/myTraining/components/structure/
+
+Create a new directory named: newsroom-page
+
+1.2 Creating the HTML File
+Inside the newsroom-page directory, add a file called newsroom-page.html.
+Use the following code to extend the base-page component:
+
+html
+Copy
+Edit
+<sly data-sly-use.basePage="com.myTraining.core.models.BasePageModel">
+  <div class="newsroom-page">
+    <sly data-sly-include="@basePage.html"/>
+  </div>
+</sly>
+This structure ensures the News Room page retains the layout and styling of the base page.
+
+2. Adding Custom Page Properties – News Configurations
+2.1 Define a Dialog for Custom Properties
+Go to:
+ui.apps/src/main/content/jcr_root/apps/myTraining/components/structure/newsroom-page/
+
+Create a cq:dialog file to let authors configure:
+
+A default image for news articles
+
+The "Read More" call-to-action text
+
+Here’s the dialog configuration:
+
+xml
+Copy
+Edit
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          cq:dialogMode="floating">
+  <content jcr:primaryType="nt:unstructured"
+           sling:resourceType="granite/ui/components/coral/foundation/container">
+    <items jcr:primaryType="nt:unstructured">
+      <newsConfig jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                  jcr:title="NEWS Configurations">
+        <items jcr:primaryType="nt:unstructured">
+          <defaultImage jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/fileupload"
+                        fieldLabel="Default News Image"
+                        name="./defaultNewsImage"/>
+          <readMoreCTA jcr:primaryType="nt:unstructured"
+                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                       fieldLabel="Read More CTA"
+                       name="./readMoreCTA"/>
+        </items>
+      </newsConfig>
+    </items>
+  </content>
+</jcr:root>
+3. Creating the Template Type for the News Room Page
+3.1 Setup Directory for Template Type
+Navigate to:
+ui.apps/src/main/content/jcr_root/conf/myTraining/settings/wcm/template-types/
+
+Create a folder named: newsroom-template-type
+
+3.2 Configure Template Type
+Inside the folder, create a .content.xml file with the following content:
+
+xml
+Copy
+Edit
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:TemplateType"
+          jcr:title="News Room Template Type"
+          allowedPaths="/content/myTraining(/.*)?"
+          allowedChildren="/apps/myTraining/components/structure/newsroom-page"/>
+4. Creating the News Room Template
+4.1 Create Template Folder
+Navigate to:
+ui.apps/src/main/content/jcr_root/conf/myTraining/settings/wcm/templates/
+
+Make a new folder named: newsroom-template
+
+4.2 Configure Template
+In the new folder, create a .content.xml file with the following:
+
+xml
+Copy
+Edit
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Template"
+          jcr:title="News Room Template"
+          jcr:description="Template for News Room Pages"
+          allowedPaths="/content/myTraining(/.*)?"
+          cq:templateType="/conf/myTraining/settings/wcm/template-types/newsroom-template-type"/>
+5. Applying Styling from the ui.frontend Folder
+5.1 Define SCSS Styles
+Navigate to:
+ui.frontend/src/main/webpack/components/news/
+
+Open the news.scss file and add:
+
+scss
+Copy
+Edit
+.news-component {
+  h2 {
+    color: green;
+  }
+  p {
+    color: yellow;
+  }
+  .date {
+    color: black;
+  }
+}
+These styles set the title in green, the description in yellow, and the date in black for the news component.
+
+6. Creating Custom Styles for Hello World or News Component
+6.1 Define Style Options in .content.xml
+Go to:
+ui.apps/src/main/content/jcr_root/apps/myTraining/components/news/
+
+Add the following configuration inside .content.xml:
+
+xml
+Copy
+Edit
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="nt:unstructured">
+  <cq:styleClasses jcr:primaryType="nt:unstructured">
+    <style1 jcr:primaryType="nt:unstructured"
+            cq:styleLabel="Green Header"
+            cq:styleId="green-header"/>
+    <style2 jcr:primaryType="nt:unstructured"
+            cq:styleLabel="Yellow News Detail"
+            cq:styleId="yellow-news-detail"/>
+  </cq:styleClasses>
+</jcr:root>
+This allows authors to apply the styles via the AEM Style System UI for better content flexibility.
