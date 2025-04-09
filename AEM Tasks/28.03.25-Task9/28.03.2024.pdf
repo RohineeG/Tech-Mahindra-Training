@@ -51,21 +51,6 @@ Link to Contact Me
 
 List of the 5 Latest News Articles, each opening in a new tab
 
-3. Home Page
-The homepage will spotlight a journalism award:
-
-Add Teaser for Award Ceremony
-Use the Teaser component to present:
-
-Image of the ceremony
-
-Award Title
-
-Short Description
-
-CTA (Call to Action): A link to a detailed article page
-
-Design & Style
 Use styling tools or CSS to ensure a clean, engaging layout.
 
 4. News Page
@@ -85,9 +70,8 @@ Description
 Image
 
 5. About Me Page
-This page introduces the journalist:
+This page introduces the person:
 
-Use Journalist Component
 This component should display:
 
 Name
@@ -96,11 +80,9 @@ Bio
 
 Profile Image
 
-Layout Design
-Keep the page clean and focused on the journalist's background.
 
 6. Contact Me Page
-Allow visitors to connect with the journalist:
+Allow visitors to connect with the person:
 
 Include Contact Info
 Use a Text or Teaser component for phone, email, etc.
