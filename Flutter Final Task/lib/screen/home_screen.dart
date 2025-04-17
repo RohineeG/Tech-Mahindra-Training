@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'categories.dart'; // Replace with correct path
-import 'favorites_screen.dart'; // Replace with correct path
+import 'categories.dart'; 
+import 'favorites_screen.dart'; 
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
               style: TextStyle(fontSize: 16, color: Colors.Blue),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 32), // Space between text and buttons
+            SizedBox(height: 32), 
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
