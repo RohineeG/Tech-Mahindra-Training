@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'categories.dart'; // Replace with correct path
-import 'favorites_screen.dart'; // Replace with correct path
+import 'categories.dart'; 
+import 'favorites_screen.dart'; 
 
 class HomeScreen extends StatelessWidget {
   @override
